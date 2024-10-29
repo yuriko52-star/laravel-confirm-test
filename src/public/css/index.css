@@ -1,0 +1,37 @@
+.contact-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+.contact-form__heading {
+    text-align: center;
+    font-family: Inika;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.61px;
+    
+}
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+.form__group {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 15px;
+} 
+    .form__group-content {
+        text-align: left;
+    }
+
+.form__label--required {
+    color: #ff0000;
+}.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+.form__input--textarea {
+    width: 100%;
+}
