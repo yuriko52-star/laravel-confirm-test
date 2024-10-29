@@ -1,0 +1,53 @@
+.thanks__content {
+    width: 1512px;
+    height: 982px;
+    top: -1575px;
+    left: -757px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.thanks__sentens {
+    width: 510px;
+    height: 39px;
+    top: 461px;
+    left: 501px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 39.09px;
+    text-align: left;
+    background: #8B7969;
+}
+.back__image {
+    width: 1381px;
+    height: 365px;
+    top: 319px;
+    left: 66px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 364.84px;
+    text-align: left;
+    background:  #8B79690D;
+
+}
+.form__button {
+    width: 140px;
+        height: 46px;
+        top: 555px;
+        left: 686px;
+        padding: 10px 40px 10px 40px;
+        gap: 10px;
+        opacity: 0px;
+}
+.form__button-submit {
+        color: #fff;
+       background: rgba(130, 117, 106, 1);
+
+
+}

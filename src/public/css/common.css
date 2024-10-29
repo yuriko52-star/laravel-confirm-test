@@ -1,0 +1,14 @@
+.header__inner {
+    width: 1512px;
+    height: 100px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+   
+   
+    border: 1px solid rgba(224, 223, 222, 1)
+}
+.header__logo {
+    text-align: center;
+    background: rgba(139, 121, 105, 1);
+}
