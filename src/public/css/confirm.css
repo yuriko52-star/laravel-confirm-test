@@ -4,49 +4,39 @@
     width: 1512px;
 }
 .confirm__heading {
-    width: 133px;
-        height: 43px;
-        top: 150px;
-        left: 694px;
-        gap: 0px;
-        opacity: 0px;
-        font-family: Inika;
-        font-size: 35px;
-        font-weight: 400;
-        line-height: 45.61px;
-        text-align: left;
-        color:  #8B7969;
+   
+    font-family: Inika;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 45.61px;
+    text-align: center;
+    color:  #8B7969;
 }
 .form {
     margin: 0 auto;
     width: 70%;
 }
-.confirm-table {
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
-        border: 1px solid #E0DFDE
-}
+
+       
+        
 .confirm-table__inner {
         width: 972px;
         height: 606px;
-        top: 247px;
-        left: 273px;
-        gap: 0px;
-        border: 1px 0px 0px 0px;
-        opacity: 0px;
+        
+        
         border: 1px solid #E0DFDE
 }
 
 .confirm-table__header {
-        width: 305px;
-        height: 69.92px;
+        width: 30%;
         
-        gap: 0px;
-        opacity: 0px;
+        border-bottom: #E0DFDE;
         background: #8B7969;
         color: #fff;
-        text-align: justify;
+        text-align: left;
         align-items: center;
+        padding: 10px;
+        opacity: 0px;
 } 
 .confirm-table__text {
     padding: 15px;
@@ -59,8 +49,13 @@
 }
 .form__item {
     display: flex;
-
+    justify-content: center;
+    margin-top: 30px;
 }
+.tel_number {
+  font-size: 13px;
+}
+
 .form__button {
     margin-bottom: 30px;
     text-align: center;
@@ -76,19 +71,22 @@
         background: #82756A;
         color: #fff;
         cursor: pointer;
+        border: none;
 }
-
+.link {
+    padding: 10px 40px 10px 40px;
+}
 .link__label {
         width: 40px;
             height: 24px;
-            top: 914px;
-            left: 868px;
+            
             gap: 0px;
             opacity: 0px;
             font-family: Inika;
-             font-size: 20px;
+             font-size: 13px;
             font-weight: 400;
             line-height: 26.06px;
-            text-align: left;
+            align-items: baseline;
             color: #8B7969;;
+            margin-left: 20px;
 }

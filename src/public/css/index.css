@@ -9,6 +9,7 @@
     font-size: 35px;
     font-weight: 400;
     line-height: 45.61px;
+    color: #8B7969;
     
 }
 .form {
@@ -17,12 +18,18 @@
     text-align: center;
 }
 .form__group {
+
+    
     display: flex;
-    justify-content:space-between;
+    
     margin-bottom: 15px;
 } 
     .form__group-content {
-        text-align: left;
+        
+        margin-left: 40px;
+        
+        
+
     }
 
 .form__label--required {
@@ -32,6 +39,15 @@
     color: #ff0000;
     text-align: left;
 }
+.select {
+    margin-left: 50px;
+}
 .form__input--textarea {
+    width: 100%;
+}
+.form__input-text {
+    width: 70%;
+}
+.form__input-text input {
     width: 100%;
 }

@@ -10,4 +10,19 @@ class ContactController extends Controller
     {
         return view ('index');
     }
+    public function confirm(Request  $request)
+    {
+        $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail','content']);
+
+        return view('confirm',compact('contact'));
+
+    }
+    public function store(Request $request){
+        $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail','content']);
+        
+        $tell = $request->input('tel1') . '-' . $request->input('tel2') . '-' . $request->input('tel3');
+
+        $contact['tell'] = $tell;
+
+    }
 }
