@@ -9,14 +9,16 @@
     <div class="confirm__heading">
         Confirm
     </div>
-    <form action="/" class="form" method="post">
+    <form action="/store" class="form" method="post">
         @csrf
         <div class="confirm-table">
             <table class="confirm-table__inner">
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">お名前</th>
                     <td class="confirm-table__text">
-                        <input type="text" name="last_name" value="{{ $contact['last_name'] }} {{ $contact['first_name'] }}"readonly>
+                        <input type="text" name="full_name" value="{{ $contact['last_name'] . ' ' . $contact['first_name'] }}"readonly>
+                        <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
+                        <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
                        
                     </td>
                 </tr>

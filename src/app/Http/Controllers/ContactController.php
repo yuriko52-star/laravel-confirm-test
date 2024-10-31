@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -20,9 +21,11 @@ class ContactController extends Controller
     public function store(Request $request){
         $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail','content']);
         
-        $tell = $request->input('tel1') . '-' . $request->input('tel2') . '-' . $request->input('tel3');
+        $tel = $request->input('tel1') . '-' . $request->input('tel2') . '-' . $request->input('tel3');
 
-        $contact['tell'] = $tell;
+        $contact['tel'] = $tel;
+        Contact::create($contact);
+        return view('thanks');
 
     }
 }

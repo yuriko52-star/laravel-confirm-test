@@ -19,4 +19,9 @@ Route::get('/', function () {
 });
 Route::get('/',[ContactController::class,'index']);
 Route::post('/confirm',[ContactController::class,'confirm']);
-Route::post('/',[ContactController::class,'store']);
+Route::post('/store',[ContactController::class,'store']);
+
+Route::get('/thanks', function () {
+    return view('thanks');
+});
+

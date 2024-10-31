@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FashionablyLate</title>
-    @section('css')
+    <link rel="stylesheet" href="{{ asset('css/sanitize.css') }}">
     <link rel="stylesheet" href="{{ asset('css/thanks.css') }}">
-    @endsection
+</head>
 
-    @section('content')
-    <div class="thanks__content">
+<body>
+   <div class="thanks__content">
         <form action="" class="form" method="">
             <div class="thanks__sentens">
-                <div class="お問い合わせありがとうございました"></div>
+                お問い合わせありがとうございました
                 <div class="back__image">
                     thank you
                 </div>
@@ -22,10 +22,6 @@
                 <button class="form__button-submit" type="submit">HOME</button>
             </div>
         </form>
-    </div>
-
-</head>
-<body>
-    
+    </div> 
 </body>
 </html>
