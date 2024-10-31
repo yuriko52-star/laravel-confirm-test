@@ -7,8 +7,11 @@
     padding: 20px 15px;
     border: 1px solid #E0DFDE
 }
+.header__utilities {
+    display:flex ;
+}
 .header__logo {
-
+    margin-left: 600px;
     text-align: center;
     color:  #8B7969;
     font-family: Inika;

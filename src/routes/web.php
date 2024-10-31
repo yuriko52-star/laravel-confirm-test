@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,8 @@ Route::post('/store',[ContactController::class,'store']);
 
 Route::get('/thanks', function () {
     return view('thanks');
+});
+Route::middleware('auth')->group(function () {
+   Route::get('/',[AuthController::class,'index']);
 });
 
