@@ -18,11 +18,19 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input-text--name">
-                <input type="text" name="last_name"placeholder="例:山田"value="{{ old('last_name')}}">
-                <input type="text" name="first_name" placeholder="例:太郎" value="{{ old('first_name') }}">
+                  <input type="text" name="last_name"placeholder="例:山田"value="{{ old('last_name')}}">
+
+                <div class="form__error">
+                    @error('last_name')
+                    {{ $message }}
+                    @enderror
+                </div>
+                  <input type="text" name="first_name" placeholder="例:太郎" value="{{ old('first_name') }}">
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('first_name')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -44,7 +52,9 @@
                 </label>
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('gender')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -58,7 +68,9 @@
                 <input type="email" name="email" placeholder="例:test@example.com"value="{{ old('email') }}" >
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('email')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -74,7 +86,9 @@
                   <input type="tel" name="tel3" placeholder="5678"value="" >
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('tel')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -88,7 +102,9 @@
                   <input type="address" name="address" placeholder="例:東京都渋谷区千駄ヶ谷1-2-3"value="" >
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('address')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -115,7 +131,9 @@
                 </select>
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('detail')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
@@ -129,7 +147,9 @@
                     <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
                 </div>
                 <div class="form__error">
-                    <!-- あとで -->
+                    @error('content')
+                    {{ $message }}
+                    @enderror
                 </div>
             </div>
         </div>
