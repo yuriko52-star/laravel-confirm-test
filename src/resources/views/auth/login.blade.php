@@ -17,7 +17,7 @@
     <div class="login-form__heading">
         login
     </div>
-    <form class="form" action="/login" method="post">
+    <form class="form" action="/admin" method="post">
         @csrf
         <div class="form__group">
             <div class="form__group-title">

@@ -1,57 +1,118 @@
 .contact-form__content {
     margin: 0 auto;
     padding: 30px 15px;
-    max-width: 1230px;
+    width: 1512px;
 }
 .contact-form__heading {
-    text-align: center;
+    width: 121px;
+    margin-left: 700px;
+    margin-bottom: 30px;
+    height: 46px;
+    gap: 0px;
+    opacity: 0px;
     font-family: Inika;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
-    line-height: 45.61px;
+    /*line-height: 45.61px;*/
+    text-align: center;
+    color: #8B7969;
+}
+.form {
+    margin:0 auto;
+    
+    width: 972px;
+   
+    
+
+}
+.form__group {
+    display: flex;
+    /*align-items: center;*/
+    width: 100%;
+    margin-bottom: 16px;
+}
+.form__group-title {
+    flex:0 0 150px;
+    
+ }
+ .form__group-content {
+    flex: 1;
+ }
+.form__label--required {
+    color: #ff0000;
+}
+.form__input-text--name {
+    display: flex;
+    
+}
+.form__input-text-last_name {
+    margin-right: 30px;
+}
+.form__input--radio {
     color: #8B7969;
     
 }
-.form {
-    margin: 0 auto;
-    width: 70%;
-    text-align: center;
-}
-.form__group {
-
-    
-    display: flex;
-    
-    margin-bottom: 15px;
-} 
-    .form__group-content {
-        
-        margin-left: 40px;
-        
-        
-
-    }
-
-.form__label--required {
-    color: #ff0000;
-}.form__error {
-    height: 20px;
-    color: #ff0000;
-    text-align: left;
-}
-.select {
-    margin-left: 50px;
-}
-.form__input--textarea {
-    width: 100%;
-}
-.form__input-text {
-    width: 70%;
-}
 .form__input-text input {
+    width: 640px;
+    
+    height: 38px;
+}
+.form__input-text-last_name input,
+.form__input-text-first_name input {
+    width: 290px;
+    height: 38px;
+   
+}
+
+.form__input-text--tel input {
+    width: 180px;
+    height: 38px;
+    margin-right: 10px;
+    
+}
+.form__error {
+    color: #ff0000;
+}
+
+
+
+
+
+.form__group-title,
+.form__group-content {
+    display: display;
     width: 100%;
 }
-.form__input-text--name {
-   
     
+.form__input-text input,
+.form__input-text--select {
+    width: 50%;
+    box-sizing: border-box;
+    
+}
+.form__input-textarea textarea {
+    width: 70%;
+    height: 100px;
+    box-sizing: border-box;
+    
+}
+.form__button {
+    width:160px;
+        height:46px;
+    
+        padding: 10px 40px 10px 40px;
+        gap: 10px;
+        opacity: 0px;
+    margin-top: 20px;
+    
+    margin-right: 400px;
+}
+
+.form__button-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background: #82756A;
+    border: none;
+    color: #fff;
 }

@@ -16,6 +16,7 @@ use App\Http\Requests\LoginRequest;
 use App\Http\Requests\RegisterRequest;
 use Illuminate\Support\Facades\Auth;
 
+
 class FortifyServiceProvider extends ServiceProvider
 {
     /**
@@ -23,7 +24,8 @@ class FortifyServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        
+      
     }
 
     /**
@@ -33,47 +35,68 @@ class FortifyServiceProvider extends ServiceProvider
     {
         Fortify::createUsersUsing(CreateNewUser::class);
         
-        // RateLimiter::for('login', function (Request $request) {
-            // $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())).'|'.$request->ip());
+        //  RateLimiter::for('login', function (Request $request) {
+            //  $email = (string) $request->email;
+            //   return Limit::perMinute(10)->by($email . $request->ip());
 
-            // return Limit::perMinute(5)->by($throttleKey);
-        // });
-            // Fortify::registerView(function () {
-        //  return view('auth.register');
-    //  });
+        //  });
+
+
+
+        
+ 
+   
+        
+
+           
+            // $throttleKey = Str::transliterate(Str::lower($request->input(Fortify::username())).'|'.$request->ip());
+           
+            //  return Limit::perMinute(10)->by($throttleKey);
+         
+             Fortify::registerView(function () {
+          return view('auth.register');
+     });
 
       Fortify::loginView(function () {
         return view('auth.login');
       });
 
-    //  RateLimiter::for('login', function (Request $request) {
-        //  $email = (string) $request->email;
+      RateLimiter::for('login', function (Request $request) {
+         $email = (string) $request->email;
 
-        //  return Limit::perMinute(10)->by($email . $request->ip());
-    //  });
+          return Limit::perMinute(10)->by($email . $request->ip());
+     });
        
         
     
-     Fortify::authenticateUsing(function (Request $request) {
-        app(LoginRequest::class)->validate($request->all());
+    //  Fortify::authenticateUsing(function (Request $request) {
+        // app(LoginRequest::class)->validate($request->all());
 
-        $credentials = $request->only('email', 'password');
+        // $credentials = $request->only('email', 'password');
         
-        if (Auth::attempt($credentials)) {
-            return Auth::user();
-        }
+        // if (Auth::attempt($credentials)) {
+            // return Auth::user();
+        // }
 
-        return null;
-    });
-    // Fortify::registerUsersUsing(function (RegisterRequest $request) {
-      
-        // return User::create([
-            // 'name' => $request->name,
-            // 'email' => $request->email,
-            // 'password' => Hash::make($request->password),
-        // ]);
+        // return null;
     // });
-}
-
     
+
+     
+       
+        
+    
+     
 }
+}
+    
+
+
+            
+      
+
+   
+        
+    
+   
+    

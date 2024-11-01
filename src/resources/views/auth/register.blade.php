@@ -7,7 +7,8 @@
 @endsection
 
 @section('button')
-<form action="" class="form">
+<form action="/login" class="form"method="post">
+    @csrf
     <div class="form__button">
        <button class="form__button-submit--login"type="submit">login </button>
     </div>
