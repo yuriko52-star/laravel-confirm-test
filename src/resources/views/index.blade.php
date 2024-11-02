@@ -132,12 +132,16 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input-text">
-                <select class="form__input-text--select "name="detail">
+                <select class="form__input-text--select "name="category_id">
                     <option value="選択してください">選択してください</option>
+                    @foreach($categories as $category)
+                    <option value="{{ $category['id'] }}">{{ $contact['category']['content'] }}</option>
+                    @endforeach
+                    
                 </select>
                 </div>
                 <div class="form__error">
-                    @error('detail')
+                    @error('content')
                     {{ $message }}
                     @enderror
                 </div>
@@ -150,10 +154,10 @@
             </div>
             <div class="form__group-content">
                 <div class="form__input-textarea">
-                    <textarea name="content" placeholder="お問い合わせ内容をご記載ください"></textarea>
+                    <textarea name="detail" placeholder="お問い合わせ内容をご記載ください"></textarea>
                 </div>
                 <div class="form__error">
-                    @error('content')
+                    @error('detail')
                     {{ $message }}
                     @enderror
                 </div>

@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,7 @@ Route::get('/thanks', function () {
  Route::middleware('auth')->group(function () {
    Route::get('/admin',[AuthController::class,'index']);
  });
-
+Route::get('/',[CategoryController::class,'index']);
+Route::post('/confirm',[CategoryController
+::class,'confirm']);
+Route::post('/store',[CategoryController::class,'store']);

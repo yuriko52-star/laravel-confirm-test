@@ -22,7 +22,7 @@ class ContactFactory extends Factory
             'tel'=>$this->faker->randomNumber(8,true),
             'address'=>$this->faker->address,
             'building'=>$this->faker->secondaryAddress,
-            'detail'=>$this->faker->numberBetween(1,5),
+            'detail'=>$this->faker->realText,
             
 
         ];

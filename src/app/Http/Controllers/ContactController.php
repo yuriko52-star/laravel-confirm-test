@@ -14,14 +14,16 @@ class ContactController extends Controller
     }
     public function confirm(ContactRequest  $request)
     {
-        $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail','content']);
+        $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail']);
 
-        return view('confirm',compact('contact'));
+
+        $category = $request->only('content');
+
+        return view('confirm',compact('contact','category'));
 
     }
     public function store(ContactRequest $request)
-    {  $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail','content']);
-        
+    {  $contact = $request->only(['category_id','last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail']);       
          $tel = $request->input('tel1') . '-' . $request->input('tel2') . '-' . $request->input('tel3');
 
          $contact['tel'] = $tel;
