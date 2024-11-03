@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Contact;
+use App\Models\Category;
 use App\Http\Requests\ContactRequest;
+
 
 class ContactController extends Controller
 {
@@ -14,7 +16,7 @@ class ContactController extends Controller
     }
     public function confirm(ContactRequest  $request)
     {
-        $contact = $request->only(['last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail']);
+        $contact = $request->only(['category_id','last_name','first_name' ,'gender','email','tel1','tel2','tel3','address','building','detail']);
 
 
         $category = $request->only('content');

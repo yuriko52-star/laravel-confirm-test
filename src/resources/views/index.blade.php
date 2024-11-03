@@ -134,9 +134,13 @@
                 <div class="form__input-text">
                 <select class="form__input-text--select "name="category_id">
                     <option value="選択してください">選択してください</option>
-                    @foreach($categories as $category)
-                    <option value="{{ $category['id'] }}">{{ $contact['category']['content'] }}</option>
-                    @endforeach
+                    
+                    <option value="商品のお届けについて">商品のお届けについて</option>
+                    <option value="商品の交換について">商品の交換について</option>
+                    <option value="商品トラブル">商品トラブル</option>
+                    <option value="ショップへのお問い合わせ" >ショップへのお問い合わせ</option>
+                    <option value="その他" >その他</option>
+                    
                     
                 </select>
                 </div>

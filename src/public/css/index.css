@@ -100,12 +100,12 @@
     width:160px;
         height:46px;
     
-        padding: 10px 40px 10px 40px;
+        /*padding: 10px 40px 10px 40px;*/
         gap: 10px;
         opacity: 0px;
     margin-top: 20px;
     
-    margin-right: 400px;
+    margin-right: 380px;
 }
 
 .form__button-submit {
