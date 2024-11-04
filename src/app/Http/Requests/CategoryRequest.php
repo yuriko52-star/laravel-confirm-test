@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+// use Att\Http\Requests\ContactRequest;
 
 class CategoryRequest extends FormRequest
 {
@@ -21,16 +22,16 @@ class CategoryRequest extends FormRequest
      *
      * @return array
      */
-    // public function rules()
-    // {
+    public function rules()
+    {
         // return [
             // 'content'=>['required'],
         // ];
-    // }
-    // public function messages() {
-    //    return [
+    }
+    public function messages() {
+       return [
         // 'content.required'=>'お問い合わせの種類を選択してください',
-    //    ] ;
-    // }
+       ] ;
+    }
 
 }

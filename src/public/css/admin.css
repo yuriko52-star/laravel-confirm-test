@@ -1,50 +1,128 @@
-form__button {
+.form__button {
+    top: 33px;
+    left: 1316px;
+    gap: 0px;
+    margin-top: 20px;
+    }
 
-}
+
 .form__button-submit--logout {
-
+    width: 100px;
+    height: 34px;
+    margin-left: 350px;
+    border: 1px solid rgba(217, 198, 181, 1);
+    opacity: 0px;
+    cursor: pointer;
 }
 .admin__content {
-
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1512px;
+}
+.admin__heading {
+    width: 121px;
+    margin-left: 700px;
+    margin-bottom: 30px;
+    height: 46px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Inika;
+    font-size: 30px;
+    font-weight: 400;
+       
+    text-align: center;
+    color: #8B7969;
 }
 .admin__utilities {
-
+    display: flex;
+    justify-content: space-between;
+    
 }
-p {
-
+.search-form__input-text {
+    width: 40%;
+    height: 50px;
+    margin-right: 20px;
+    background:#E0DFDE ;
 }
-.select {
 
+
+
+.search-form__item-select {
+    border: 1px solid #E0DFDE;
+    background:#E0DFDE;
+    color:#8B7969 ;
+    margin-right:20px ;
+    height: 50px;
 }
 .form__button-submit--search {
-
+    width: 102.48px;
+    height: 50px;
+    cursor: pointer;
+    gap: 0px;
+  
+    opacity: 0px;
+    background:#8B7969 ;
+    color: #fff;
+    margin-right: 20px;
+    border: 1px solid #8B7969
 }
 .form__button-submit--reset {
-
-}
-.export {
-
+    width: 102.48px;
+    height: 50px;
+    cursor: pointer;
+    gap: 0px;
+   
+    opacity: 0px;
+    border: 1px solid #D9C6B5;
+    color: #fff;
 }
 .form__button-submit--export {
-
+        width:  148px;
+        height:39px;
+        background: #E1DBD699;
+        cursor: pointer;
+        padding: 8px 20px 8px 20px;
+        gap: 10px;
+        opacity: 0px;
 }
 .admin__table {
-
+    margin: 0 auto;
 }
 .admin-table__inner {
-
+        width: 1183px;
+        height: 59px;
+        
+        gap: 0px;
+        opacity: 0px;
 
 }
 .admin-table__row {
-
+    border: 1px solid #E0DFDE;
 }
 .admin-table__title {
-
+        width:802px;
+        height: 26px;
+        background: #8B7969;
+        color: #fff;
+        gap: 120px;
+        opacity: 0px;
 }
 .admin-table__content {
-
+        width: 1182.06px;
+        height: 72.98px;
+        
+        
+        gap: 0px;
+        border: 1px 0px 0px 0px;
+        opacity: 0px;
 }
 .form__button-submit--detail {
-
+        width: 76px;
+        height: 39px;
+        border: 1px solid #D9C6B599;
+        padding: 8px 20px 8px 20px;
+        gap: 10px;
+        background: #F4F4F44D;
+        opacity: 0px;
 }
 

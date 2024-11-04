@@ -30,8 +30,11 @@ Route::get('/thanks', function () {
 
  Route::middleware('auth')->group(function () {
    Route::get('/admin',[AuthController::class,'index']);
+   Route::post('/register',[AuthController::class,'index']);
  });
 Route::get('/',[CategoryController::class,'index']);
 Route::post('/confirm',[CategoryController
 ::class,'confirm']);
 Route::post('/store',[CategoryController::class,'store']);
+
+Route::get('/admin',[ContactController::class,'search']);

@@ -6,8 +6,27 @@
 docker+compose up -d --build 
 composer install
 .envの環境変数を変更
-php artisan key:generate
+php artisan key:
+php artisan make:migration create_contacts_table
+php artisan make:migration create_categories_table
 php artisan migrate
+composer require laravel/fortify
+php artisan vendor:publish --provider="Laravel\Fortify\FortifyServiceProvider"
+composer require laravel-lang/lang:~7.0 --dev
+cp -r ./vendor/laravel-lang/lang/src/ja ./resources/lang/
+php artisan make:controller AuthController
+php artisan make:controller CategoryController
+php artisan make:controller ContactController
+php artisan make:request CategoryRequest
+php artisan make:request ContactRequest
+php artisan make:request LoginRequest
+php artisan make:request RegisterRequest
+php artisan make:model Category
+php artisan make:model Contact
+php artisan make:factory ContactFactory
+php artisan make:seeder CategoriesTableSeeder
+php artisan db:seed
+
 
 
 
@@ -16,6 +35,8 @@ php artisan migrate
 Laravel Framework 8.83.27
 ## ER図
 < - - - 作成したER図の画像 - - - >
+
+![alt text](.drawio.png)
 
 ## URL
 - 例) 開発環境：http://localhost/
