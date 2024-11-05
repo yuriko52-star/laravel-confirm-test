@@ -4,23 +4,24 @@
     text-align: center;
     gap: 0px;
     opacity: 0px;
+    justify-content: center;
+    align-items: center;
 
 }
-.thanks__sentens {
+.thanks__text{
     width: 510px;
     height: 39px;
-    top: -50%;
-    left: 150%;
+    
     gap: 0px;
     opacity: 0px;
     font-family: Inika;
     font-size: 30px;
     font-weight: 700;
     line-height: 39.09px;
-    text-align: left;
+    
     color: #8B7969;
 }
-.back__image {
+.back__inner {
     width: 1381px;
     height: 365px;
     

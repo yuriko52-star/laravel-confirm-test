@@ -11,16 +11,18 @@
 
 <body>
    <div class="thanks__content">
-        <form action="" class="form" method="">
-            <div class="thanks__sentens">
-                お問い合わせありがとうございました
-                <div class="back__image">
-                    thank you
-                </div>
+        <form action="/thanks" class="form" method="post">
+            @csrf
+            <div class="thanks__inner"> 
+                thank you
+            </div>
+            <div class="thanks__text">
+                お問い合わせありがとうございます
             </div>
             <div class="form__button">
                 <button class="form__button-submit" type="submit">HOME</button>
             </div>
+           
         </form>
     </div> 
 </body>

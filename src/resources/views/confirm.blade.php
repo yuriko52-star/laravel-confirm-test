@@ -16,11 +16,15 @@
                 
                 <tr class="confirm-table__row">
                     <th class="confirm-table__header">お名前</th>
+                   
+
                     <td class="confirm-table__text">
                         <input type="text" name="full_name" value="{{ $contact['last_name']  . ' ' .  $contact['first_name'] }}"readonly>
                         <input type="hidden" name="last_name" value="{{ $contact['last_name'] }}">
                         <input type="hidden" name="first_name" value="{{ $contact['first_name'] }}">
                        
+    
+
                     </td>
                 </tr>
                 <tr class="confirm-table__row">
@@ -76,7 +80,7 @@
             <button class="form__button-submit">送信</button>
            </div>
             <div class="link">
-                <a href="" class="link__label">修正</a>
+                <a href="/" class="link__label">修正</a>
             </div>
         </div>
 

@@ -21,6 +21,14 @@ class ContactController extends Controller
 
         $category = Category::find($contact['category_id']);
 
+       if (empty($contact)) {
+        // デバッグ出力
+        dd('コンタクト情報がリクエストから取得されていません');
+    }
+
+   
+   
+
         return view('confirm',[ 'contact' => $contact,
         'category' => $category]);
 
