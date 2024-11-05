@@ -33,10 +33,13 @@ php artisan db:seed
 ## 使用技術(実行環境)
 - 例) Laravel 8.x(言語やフレームワーク、バージョンなどが記載されていると良い)
 Laravel Framework 8.83.27
+php 7.4.9
+MySQL 8.0.26
 ## ER図
 < - - - 作成したER図の画像 - - - >
 
 ![alt text](.drawio.png)
 
 ## URL
-- 例) 開発環境：http://localhost/
+- 開発環境：http://localhost/
+phpMyAdmin:http://localhost:8080/
